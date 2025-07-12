@@ -391,5 +391,7 @@ document.getElementById("filterRole").addEventListener("change", () => {
 renderEmployees();
 
 window.showAddForm = showAddForm;
+window.hideForm = hideForm;
 window.editEmployee = editEmployee;
 window.deleteEmployee = deleteEmployee;
+
