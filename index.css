@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+header input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0.5rem 0;
+}
+
+header button {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.controls {
+    background: #ecf0f1;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.controls input,
+.controls select,
+.controls button {
+    padding: 8px;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.employee-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+.employee-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.employee-card button {
+    margin-right: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+}
+
+.employee-card button:last-child {
+    background: #e74c3c;
+}
+
+#pagination {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+#pagination button.active {
+    background: #2c3e50;
+    color: white;
+}
+
+#employee-form-section {
+    background: white;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#employee-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form-buttons button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+    background: #2980b9;
+}
+
+.form-buttons button[type="button"] {
+    background: #7f8c8d;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+    header {
+        padding: 1rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #employee-list {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    #employee-list {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1201px) {
+    #employee-list {
+        justify-content: space-between;
+    }
+}
