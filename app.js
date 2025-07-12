@@ -389,3 +389,7 @@ document.getElementById("filterRole").addEventListener("change", () => {
 
 // Initial Render
 renderEmployees();
+
+window.showAddForm = showAddForm;
+window.editEmployee = editEmployee;
+window.deleteEmployee = deleteEmployee;
