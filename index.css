@@ -158,6 +158,18 @@ footer {
     margin-top: 2rem;
 }
 
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 576px) {
